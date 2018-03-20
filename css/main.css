@@ -1,0 +1,388 @@
+/* Debug
+	 ========================================================================== */
+
+/* * { outline: 1px solid red; } */
+
+/* Base
+	 ========================================================================== */
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	color: #666;
+}
+
+.icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+}
+
+.photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+input,
+textarea,
+button,
+select {
+	width: 100%;
+	border-radius: 5px;
+	color: #666;
+	font-size: .8rem;
+}
+
+input,
+textarea,
+select {
+	border: 1px solid #dbdbdb;
+	padding: 10px;
+}
+
+textarea,
+button { margin-top: 3.75%; }
+
+textarea { resize: none; }
+
+input.iconic,
+select.iconic { padding-right: 40px; }
+
+button {
+	border: none;
+	padding: 15px;
+	background-color: #7676bd;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.hide { display: none; }
+
+/* Header
+	 ========================================================================== */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5%;
+	background-color: #7676bd;
+	color: white;
+}
+
+.logo h1 {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.logo span { font-weight: 300; }
+
+.personal-box {
+	display: flex;
+	align-items: center;
+}
+
+.personal-box .notification {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.notification::after {
+	content: "";
+	position: absolute;
+	top: -2.5px;
+	right: 0;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #84dc86;
+}
+
+.personal-box .user {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	border-left: 1px solid #4d4c72;
+	padding: 2.5px 0;
+	cursor: pointer;
+}
+
+.user .photo { margin-left: 10px; }
+
+.username {
+	display: none;
+	font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+
+	.username {
+		display: initial;
+		margin-left: 10px;
+	}
+}
+
+/* Navigation
+	 ========================================================================== */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15%;
+	background-color: #4d4c72;
+}
+
+nav .option {
+	border: 3px solid transparent;
+	padding: 7px;
+	cursor: pointer;
+}
+
+.option svg {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	fill: #a6a6b8;
+}
+
+.option:hover svg { fill: white; }
+
+.option.selected {
+	border-bottom-color: #84dc86;
+	cursor: initial;
+}
+
+.selected svg { fill: white; }
+
+/* Main
+	 ========================================================================== */
+
+.main-top {
+	border-bottom: 1px solid #dbdbdb;
+	padding: 5%;
+	background-color: #fbfbfb;
+	text-align: center;
+}
+
+main section {
+	border-top: 1px solid #dbdbdb;
+	padding: 5%;
+}
+
+main section:nth-of-type(2) { border: none; }
+
+.name {
+	margin-top: 0;
+	margin-bottom: 3.75%;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.search {
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search-icon,
+.select-icon {
+	position: absolute;
+	top: 50%;
+	right: 11px;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+}
+
+.title {
+	margin: 0;
+	margin-bottom: 3.75%;
+	font-size: .8rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/* Alert
+	 ========================================================================== */
+
+.alert {
+	position: relative;
+	margin: 5%;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #7676bd;
+	font-size: .8rem;
+	text-align: center;
+	color: white;
+}
+
+.alert-title { font-weight: 700; }
+
+.alert-message {
+	margin: 0;
+	text-align: left;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.close-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+}
+
+/* Social Stats
+	 ========================================================================== */
+
+.social-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 3.75%;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #fbfbfb;
+}
+
+.social-logo {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #7676bd;
+}
+
+.social-logo .icon {
+	width: 50%;
+	height: 50%;
+}
+
+.social-info { margin-left: 20px; }
+
+.social-name {
+	margin: 0;
+	font-size: 1rem;
+	color: #7676bd;
+}
+
+.social-number {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+/* Lists
+	 ========================================================================== */
+
+.member-box {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: .8rem;
+}
+
+.member-box:not(:first-of-type) {
+	border-top: 1px solid #dbdbdb;
+	padding-top: 10px;
+}
+
+.member-box:not(:last-of-type) { padding-bottom: 10px; }
+
+/* Usar nombre de clase mas caracteristica */
+.box-inside {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.member-info { margin-left: 10px; }
+
+.member-name {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.member-email {
+	color: #7676bd;
+	text-decoration: none;
+}
+
+.member-time {
+	 color: inherit;
+}
+
+.member-icon {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+/* Settings
+	 ========================================================================== */
+
+.timezone-select { position: relative; }
+
+.settings button { width: 48.75%; }
+
+.settings button:first-of-type { margin-right: 2.5%; }
+
+.button-cancel { background-color: #b2b2b2; }
+
+/* Light Switch
+	 ========================================================================== */
+
+.switch-light {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3.75%;
+}
+
+#switch {
+	display: inline-block;
+	width: 25%;
+	margin-left: auto;
+}
+
+.switch-ios.switch-light input:checked ~ span { box-shadow: inset 0 0 0 30px #7676bd; }
+
+.switch-ios.switch-light input:checked ~ span a { border-color: #7676bd; }
+
+.switch-light span {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.switch-light strong {
+	font-size: .8rem;
+	margin-right: auto;
+}
