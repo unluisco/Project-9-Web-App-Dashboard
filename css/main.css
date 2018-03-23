@@ -95,14 +95,6 @@ select {
 	.message-user { border-right: 1px solid #dbdbdb }
 }
 
-.hide { display: none; }
-
-.invalid { border-color: #de4848; }
-
-.confirmation { background-color: #54de48; }
-
-.error { background-color: #de4848; }
-
 /* Header
 	 ========================================================================== */
 
@@ -557,6 +549,14 @@ main section:nth-of-type(2) { border-top: none; }
 	color: white;
 	transform: translateX(-50%);
 }
+
+.hide { display: none; }
+
+.invalid { border-color: #de4848; }
+
+.confirmation { background-color: #54de48; }
+
+.error { background-color: #de4848; }
 
 /* Settings
 	 ========================================================================== */
