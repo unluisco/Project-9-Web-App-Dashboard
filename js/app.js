@@ -37,6 +37,9 @@ function checkForm() {
 		msgAlert.textContent = 'message sent';
 		msgAlert.classList.add('confirmation');
 
+		searchUser.value = '';
+		msgTextarea.value = '';
+
 	} else {
 		if (msgAlert.classList.contains('confirmation')) {
 			msgAlert.classList.remove('confirmation');
