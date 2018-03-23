@@ -101,6 +101,11 @@ var mobileUsersChart = new Chart(mobileUsers, {
 
 		options: {
 			rotation: 4.2,
+			elements: {
+				arc: {
+					borderWidth: 0
+				}
+			},
 			legend: {
 				position: 'right',
 				labels: {
