@@ -412,6 +412,57 @@ main section:nth-of-type(2) { border-top: none; }
 	height: 100%;
 }
 
+/* Traffic
+	 ========================================================================== */
+
+@media (min-width: 1024px) {
+
+	.traffic-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.traffic-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	margin-top: 0;
+	margin-bottom: 3.75%;
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+
+	.traffic-list { justify-content: space-around; }
+}
+
+.traffic-option {
+	border-radius: 20px;
+	padding: 5px 10px;
+	font-size: .8rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+
+	.traffic-option:not(:last-of-type) {
+		margin-right: 10px;
+	}
+}
+
+.traffic-option.selected {
+	background-color: #84dc86;
+	color: white;
+}
+
+.traffic-option:hover:not(.selected) {
+	background-color: #b2b2b2;
+	color: white;
+}
+
 /* Social Stats
 	 ========================================================================== */
 
